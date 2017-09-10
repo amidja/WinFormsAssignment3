@@ -45,14 +45,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Customer.cs" />
+    <Compile Include="DeliveryType.cs" />
+    <Compile Include="Drink.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="WinFormCustomPizza.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="WinFormCustomPizza.Designer.cs">
+      <DependentUpon>WinFormCustomPizza.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderItem.cs" />
+    <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaBase.cs" />
+    <Compile Include="PizzaSauce.cs" />
+    <Compile Include="PizzaTopping.cs" />
+    <Compile Include="WinFormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormMain.Designer.cs">
+      <DependentUpon>WinFormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="IOrderItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinFormOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormOrder.Designer.cs">
+      <DependentUpon>WinFormOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormStandardItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormStandardItems.Designer.cs">
+      <DependentUpon>WinFormStandardItems.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WinFormCustomPizza.resx">
+      <DependentUpon>WinFormCustomPizza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormMain.resx">
+      <DependentUpon>WinFormMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +97,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WinFormOrder.resx">
+      <DependentUpon>WinFormOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormStandardItems.resx">
+      <DependentUpon>WinFormStandardItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\PizzaBase.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
